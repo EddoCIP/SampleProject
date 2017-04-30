@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+ 
+<tiles-definitions> 
+    <!-- Base Definition-->
+    <definition name="base-definition" template="/WEB-INF/views/tiles/layouts/layout.jsp">  
+        <put-attribute name="header" value="/WEB-INF/views/tiles/template/header.jsp" />  
+        <put-attribute name="menu" value="/WEB-INF/views/tiles/template/menu.jsp" />  
+        <put-attribute name="body" value="" /> 
+        <put-attribute name="footer" value="/WEB-INF/views/tiles/template/footer.jsp" />  
+    </definition> 
+    <!-- Home Page -->
+    <definition name="home" extends="base-definition">   
+        <put-attribute name="body" value="/WEB-INF/views/pages/home.jsp" />  
+    </definition>     
+    
+    <!--Tabel Page-->
+     <definition name="tabel" extends="base-definition">   
+        <put-attribute name="body" value="/WEB-INF/views/pages/tabel.jsp" />  
+    </definition>  
+    
+    <!--Form Page-->
+     <definition name="form" extends="base-definition">   
+        <put-attribute name="body" value="/WEB-INF/views/pages/form.jsp" />  
+    </definition>  
+    
+     <!--Modal Page-->
+     <definition name="modal" extends="base-definition">   
+        <put-attribute name="body" value="/WEB-INF/views/pages/modal.jsp" />  
+    </definition>  
+    
+     <!--siswa Page-->
+     <definition name="siswa" extends="base-definition">   
+        <put-attribute name="body" value="/WEB-INF/views/pages/siswa/view.jsp" />  
+    </definition>  
+</tiles-definitions>
